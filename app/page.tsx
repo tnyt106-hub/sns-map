@@ -123,7 +123,7 @@ export default function Home() {
           </div>
         ) : (
           <div className="absolute inset-0">
-            <LazyMap stores={stores} posts={posts} />
+            <LazyMap stores={stores as any} posts={posts as any} />
           </div>
         )}
       </div>
