@@ -1,5 +1,5 @@
+export const runtime = 'edge';
 import { NextRequest, NextResponse } from "next/server";
-
 /**
  * Gemini APIを使って動画情報から店名・住所を推測
  */

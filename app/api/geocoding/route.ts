@@ -1,5 +1,5 @@
+export const runtime = 'edge';
 import { NextRequest, NextResponse } from "next/server";
-
 /**
  * Google Maps Geocoding APIで住所から緯度・経度を取得
  */

@@ -1,6 +1,6 @@
+export const runtime = 'edge';
 import { NextRequest, NextResponse } from "next/server";
 import { extractYouTubeVideoId } from "@/src/lib/youtube";
-
 /**
  * YouTube Data API v3で動画情報を取得
  */
