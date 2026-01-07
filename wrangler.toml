@@ -6,3 +6,4 @@ compatibility_flags = [ "nodejs_compat" ]
 
 [env.production]
 name = "shikoku-sns-map"
+compatibility_flags = [ "nodejs_compat" ]
