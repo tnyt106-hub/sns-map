@@ -4,5 +4,17 @@ pages_build_output_dir = ".vercel/output/static"
 
 compatibility_flags = [ "nodejs_compat" ]
 
+[vars]
+# 地図用
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY = AIzaSyAlKaonSjK6HevkVutDqXLrPt1lCcWajGw
+
+# Firebase用（SDKが内部でasync_hooksを使うため必須）
+FIREBASE_API_KEY = AIzaSyCcb35I0Dq7e7WUyivS4NBFgTkZ4JR1Pu0
+FIREBASE_PROJECT_ID = shikoku-sns-map
+FIREBASE_AUTH_DOMAIN = shikoku-sns-map.firebaseapp.com
+FIREBASE_STORAGE_BUCKET = shikoku-sns-map.firebasestorage.app
+FIREBASE_MESSAGING_SENDER_ID = 449676918606
+FIREBASE_APP_ID = 1:449676918606:web:26a993d8119cf810f4e81f
+
 [env.production]
 name = "shikoku-sns-map"
