@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Cloudflare Pages対応
-  output: 'standalone',
+  // Cloudflare Pagesでは standalone は不要（またはエラーの原因）なので削除します
   reactStrictMode: true,
-  // 静的エクスポートが必要な場合は以下のコメントを外す
-  // output: 'export',
+  
+  // もし特定のCloudflare設定が必要な場合はここに追加しますが、
+  // 基本的には標準の設定で動作します。
 }
 
 module.exports = nextConfig
