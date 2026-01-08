@@ -1,9 +1,10 @@
 export const runtime = 'edge';
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/src/lib/firebase";
-import { collection, addDoc, Timestamp, getDocs } from "firebase/firestore";
+import { collection, addDoc, getDocs } from "firebase/firestore/lite";
 import { encode } from "ngeohash";
 import { Store } from "@/types/store";
+import { Timestamp } from "firebase/firestore/lite";
 
 // POST: 店舗データを保存
 export async function POST(request: NextRequest) {
